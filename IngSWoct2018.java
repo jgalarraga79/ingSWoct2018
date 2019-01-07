@@ -25,8 +25,7 @@ public class IngSWoct2018 {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
                 
-        float fibo1,fibo2,i;
-        int numero;
+        int fibo1,fibo2,i,numero;
         
         do{
             System.out.print("Introduce numero mayor que 1: ");
