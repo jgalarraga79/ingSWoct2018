@@ -28,9 +28,9 @@ public class IngSWoct2018 {
         int fibo1,fibo2,i,numero;
         
         do{
-            System.out.print("Introduce numero mayor que 1: ");
+            System.out.print("Introduce numero mayor que 1 y menor o igual que 10: ");
             numero = sc.nextInt();
-        }while(numero<=1);   
+        }while(numero<=1 || numero>10);   
         
         FileWriter fw;
         
