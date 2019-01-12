@@ -25,23 +25,23 @@ public class IngSWoct2018 {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
                 
-        int fibo1,fibo2,i,numero;
+        int fibo1,fibo2,i,entero;
         
         do{
-            System.out.print("Introduce numero mayor que 1 y menor o igual que 10: ");
-            numero = sc.nextInt();
-        }while(numero<=1 || numero>10);   
+            System.out.print("Ingrese entero mayor que 1 y menor o igual que 20: ");
+            entero = sc.nextInt();
+        }while(entero<=1 || entero>20);   
         
         FileWriter fw;
         
         try {
             fw = new FileWriter(new File("serie.txt"),true);
-            fw.write("Los " + numero + " primeros términos de la serie de Fibonacci son:");
+            fw.write("Los " + entero + " primeros términos de la serie de Fibonacci son:");
             fibo1=1;
             fibo2=1; 
 
             fw.write(fibo1 + " ");
-            for(i=2;i<=numero;i++){
+            for(i=2;i<=entero;i++){
                  //System.out.print
                  fw.write(fibo2 + " ");
                  fibo2 = fibo1 + fibo2;
